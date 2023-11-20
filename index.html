@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="coverflow.css" />
+    <link rel="stylesheet" href="Mystyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        coverflowimages({
+          coverid: 'coverflow1',
+          images: [
+            ['assets/img1.jpg'],
+            ['assets/img2.jpg'],
+            ['assets/img3.jpg'],
+            ['assets/img4.jpg'],
+            ['assets/img5.jpg']
+          ]
+        });
+      });
+    </script>
+
+  </head>
+
+  <body>
+      <div class="wrap" id="coverflow1">
+        <nav class="navbar">
+          <a href="autobazzar.html">Home</a> | <a href="aboutus.html">About Us</a> |
+          <a href="finddealer.html"> Find a Dealer </a> |
+        </nav>
+      <div class="album-title">Album One</div>
+      <div class="scrollbar">
+        <div class="handle">
+          <div class="mousearea"></div>
+        </div>
+      </div>
+
+      <div class="frame coverflow">
+        <ul class="clearfix">
+          <li><img src="assets/img1.jpg"/></li>
+          <li><img src="assets/img2.jpg"/></li>
+          <li><img src="assets/img3.jpg"/></li>
+          <li><img src="assets/img4.jpg"/></li>
+          <li><img src="assets/img5.jpg"/></li>
+        </ul>
+      </div>
+
+      <ul class="pages"></ul>
+    </div>
+      <div class="wrap" id="coverflow2">
+      <div class="album-title">Album Two</div>
+      <div class="scrollbar">
+        <div class="handle">
+          <div class="mousearea"></div>
+        </div>
+      </div>
+
+      <div class="frame coverflow">
+        <ul class="clearfix">
+          <li><img src="assets/img1.jpg"/></li>
+          <li><img src="assets/img2.jpg"/></li>
+          <li><img src="assets/img3.jpg"/></li>
+          <li><img src="assets/img4.jpg"/></li>
+          <li><img src="assets/img5.jpg"/></li>
+        </ul>
+      </div>
+
+      <ul class="pages"></ul>
+    </div>
+    <script defer src="jquery.min.js"></script>
+    <script defer src="sly.min.js"></script>
+    <script defer src="coverflow.js"></script>
+ </body>
+</html>
